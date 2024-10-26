@@ -1,0 +1,116 @@
+/* Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 1.5em;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Alerta de Emergência */
+.alert-banner {
+  background-color: #FF5733;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.alert-banner p {
+  font-size: 1.1rem;
+}
+
+/* Estilo da Seção de Botões */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.buttons button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 1em;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 200px;
+  min-height: 60px; /* Altura mínima uniforme */
+  display: flex;
+  align-items: center; /* Alinhamento vertical do conteúdo */
+  justify-content: center; /* Centralizar o texto */
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo do texto nos botões */
+.buttons h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0; /* Remove margens extras */
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1.5em 0;
+  margin-top: 1.5rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+footer a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Layout Responsivo */
+@media (min-width: 768px) {
+  .buttons {
+      gap: 1.5rem;
+  }
+
+  .buttons button {
+      font-size: 1.1rem;
+      padding: 1.2em 2em;
+      max-width: 220px;
+  }
+}
